@@ -1,0 +1,17 @@
+{
+  "name": "node-express-practise",
+  "version": "1.0.0",
+  "description": "node express practise",
+  "main": "app.js",
+  "scripts": {
+    "start:dev": "NODE_ENV=development & nodemon server.js",
+    "start:prod": "SET NODE_ENV=production & nodemon server.js"
+  },
+  "author": "Riddhi",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "morgan": "^1.10.0"
+  }
+}
