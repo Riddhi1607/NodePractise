@@ -6,13 +6,13 @@ const router = express.Router();
 //param middleware
 //Here this is being used to validate tour Id passed in the request uri
 //so that it gets validated before even reaching out to the handler
-router.param('id', tourController.checkId)
+//router.param('id', tourController.checkId)
 
 router
     .route('/')
     .get(tourController.getAllTours)
-    .post(tourController.createTour); // Chaining middleware
-
+    //.post(tourController.checkBody, tourController.createTour); // Chaining middleware
+    .post(tourController.createTour);
 router
     .route('/:id')
     .get(tourController.getTourById)
